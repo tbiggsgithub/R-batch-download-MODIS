@@ -7,7 +7,7 @@ You can call it anything; here the name is "urls_to_download.inp"
 ```R
 library(RCurl)
 library(rgdal)
-indir = "C:/Users/tbiggs/AppData/MODIS_downloads/" # Directory with the inp file from reverb
+indir = "C:/Users/tbiggs/AppData/MODIS_downloads/" # Directory with the inp file from reverb.  Data will be downloaded to this directory
 url.list = "urls_to_download.inp" # Name of file generated from reverb website
 
 file.list = read.table(paste(indir,url.list,sep=""))
