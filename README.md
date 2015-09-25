@@ -1,6 +1,7 @@
 # R-batch-download-MODIS
 
 1.  MODIS data:  generate a .inp file of urls do download from http://reverb.echo.nasa.gov/reverb
+You can call it anything; here the name is "urls_to_download.inp"
 
 2. Execute the following code in R:
 ```R
@@ -18,4 +19,4 @@ for (j in 1:length(food)){
 	dest.fname = strsplit(foo,"\\?")[[1]][1]
 	foo = download.file(wgeturl, destfile=paste(workd,dest.fname,sep=""), mode="wb", method='internal')
 }
-```R
+```
