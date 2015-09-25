@@ -17,6 +17,6 @@ for (j in 1:length(food)){
 	wgeturl = as.character(file.list[j,])
 	foo = strsplit(as.character(file.list[j,]),"/")[[1]][9]
 	dest.fname = strsplit(foo,"\\?")[[1]][1]
-	foo = download.file(wgeturl, destfile=paste(workd,dest.fname,sep=""), mode="wb", method='internal')
+	foo = download.file(wgeturl, destfile=paste(indir,dest.fname,sep=""), mode="wb", method='internal')
 }
 ```
